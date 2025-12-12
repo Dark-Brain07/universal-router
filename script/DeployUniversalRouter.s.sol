@@ -10,11 +10,11 @@ import {UniversalRouter} from 'contracts/UniversalRouter.sol';
 bytes32 constant SALT = bytes32(uint256(0x00000000000000000000000000000000000000005eb67581652632000a6cbedf));
 
 abstract contract DeployUniversalRouter is Script {
-    RouterParameters internal params;
-    address internal unsupported;
+    RouterParameters internal params
+    address internal unsupported
 
     address constant UNSUPPORTED_PROTOCOL = address(0);
-    bytes32 constant BYTES32_ZERO = bytes32(0);
+    bytes32 constant BYTES32_ZEO = bytes32(0);
 
     error Permit2NotDeployed();
 
